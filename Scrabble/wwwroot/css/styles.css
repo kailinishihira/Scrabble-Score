@@ -1,15 +1,32 @@
+body {
+  background-color: #5C1A1E;
+  color: white;
+}
+
 h1, h2 {
   text-align: center;
 }
 
 h1 {
-  font-size: 40px;
-  letter-spacing: 8px;
-  margin-bottom: 30%;
+  font-size: 120px;
+  letter-spacing: 35px;
+  margin-bottom: 15%;
   margin-top: 40px;
 }
 h2 {
   letter-spacing: 3px;
+  color: #000000;
+  border: solid #D4C8B0;
+  background-color: #D4C8B0;
+  opacity: 0.9;
+  padding: 15px 25px 15px 25px;
+}
+
+.well {
+  background-color: #D4C8B0;
+  border: #D4C8B0;
+  font-size: 20px;
+  color: #000000;
 }
 #userWord {
   font-size: 25px;
@@ -17,3 +34,16 @@ h2 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.button {
+  float: right;
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  padding: 15px 25px 15px 25px;
+  font-size: 20px;
+}
+/*.button:hover{
+  background-color: #000000;
+  border: #000000;
+  letter-spacing: 3px;
+}*/
