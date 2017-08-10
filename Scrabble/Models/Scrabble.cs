@@ -3,7 +3,6 @@ using System;
 
 namespace Scrabble.Models
 {
-
   public class ScrabbleGame
   {
     private string _inputWord;
@@ -16,28 +15,13 @@ namespace Scrabble.Models
     private static List<char> eightPoint = new List<char> (){'J', 'X'};
     private static List<char> tenPoint = new List<char> (){'Q', 'Z'};
 
-
-
     public ScrabbleGame(string inputWord)
     {
       _inputWord = inputWord;
     }
-    //
-    // public int GetKeepScore()
-    // {
-    //   return _keepScore;
-    // }
-    //
-    // public void SetKeepScore(int keepScore)
-    // {
-    //   _keepScore = keepScore;
-    // }
 
     public int GetScore()
     {
-      // string upperCaseWord = _inputWord.ToUpper();
-      // Dictionary<string, int> letterScore = new Dictionary<string, int>() { {"A", 1}, {"E", 1}, {"I", 1}, {"O", 1}, {"U", 1}, {"L", 1}, {"N", 1}, {"R", 1}, {"S", 1}, {"T", 1} };
-
       _keepScore = 0;
       string inputWordUpper = _inputWord.ToUpper();
 

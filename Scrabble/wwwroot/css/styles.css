@@ -1,0 +1,19 @@
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin-bottom: 30%;
+  margin-top: 40px;
+}
+h2 {
+  letter-spacing: 3px;
+}
+#userWord {
+  font-size: 25px;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
