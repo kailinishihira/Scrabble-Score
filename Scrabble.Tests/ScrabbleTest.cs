@@ -60,8 +60,108 @@ namespace Scrabble.Tests
       ScrabbleGame newWord = new ScrabbleGame("do");
       int expected = 3;
       int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnThreePoints_3()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("p");
+      int expected = 3;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnSixPoints3Lists_6()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("pad");
+      int expected = 6;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnFourPoints_4()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("f");
+      int expected = 4;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnFourPoints4List_10()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("adbf");
+      int expected = 10;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnFivePoint_5()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("k");
+      int expected = 5;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnEightPoint_8()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("j");
+      int expected = 8;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_Return23Points6Lists_23()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("abdfkj");
+      int expected = 23;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnTenPoints_10()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("Q");
+      int expected = 10;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_Return33Points7Lists_10()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("abdfkjq");
+      int expected = 33;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnPointForEpicodus_13()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("epicodus");
+      int expected = 13;
+      int actual = newWord.GetScore();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void GetScore_ReturnScoreForLongWord_56()
+    {
+      ScrabbleGame newWord = new ScrabbleGame("supercalifragilisticexpialidocious");
+      int expected = 56;
+      int actual = newWord.GetScore();
       Console.WriteLine(actual);
       Assert.AreEqual(expected, actual);
+
     }
 
 
