@@ -36,23 +36,26 @@ namespace Scrabble.Models
 
       for (int i = 0; i < inputWordUpper.Length; i++)
       {
-        // for (int j = 0; j < onePoint.Count; j++)
-        // {
+        for (int j = 0; j < onePoint.Count; j++)
+        {
+          if (inputWordUpper[i] == onePoint[j])
+          {
+            _keepScore += 1;
+          }
+        }
+      }
+
+        for (int i = 0; i < inputWordUpper.Length; i++)
+        {
           for (int k = 0; k < twoPoint.Count; k++)
           {
             if (inputWordUpper[i] == twoPoint[k])
             {
-              Console.WriteLine("got to two point");
               _keepScore += 2;
             }
-            // if (inputWordUpper[i] == onePoint[j])
-            // {
-            //   Console.WriteLine("got to one point");
-            //   _keepScore += 1;
-            // }
-          // }
+          }
         }
-      }
+
       return _keepScore;
     }
 
